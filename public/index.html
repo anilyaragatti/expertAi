@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Feature Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>Xpert-AI</h2>
+            </div>
+            <ul class="feature-menu">
+                <li class="active" data-feature="chat"><i class="fas fa-comments"></i> General Chat</li>
+                <li data-feature="career"><i class="fas fa-briefcase"></i> Career Advisor</li>
+                <li data-feature="resume"><i class="fas fa-file-alt"></i> Resume Builder</li>
+                <li data-feature="story"><i class="fas fa-book"></i> Story Telling</li>
+                <li data-feature="health"><i class="fas fa-heartbeat"></i> Health Assistant</li>
+                <li data-feature="startup"><i class="fas fa-rocket"></i> Startup Consultant</li>
+                <li data-feature="books"><i class="fas fa-book-open"></i> Book Summaries</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="feature-header">
+                <h2 id="current-feature">General Chat</h2>
+            </div>
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot">
+                        <div class="message-content">
+                            Welcome! I'm your XpertAI assistant. How can I help you today?
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                    <button id="send-btn"><i class="fas fa-paper-up"></i>&#10148</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
